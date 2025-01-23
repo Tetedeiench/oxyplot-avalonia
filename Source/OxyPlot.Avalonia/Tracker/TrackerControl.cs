@@ -251,6 +251,7 @@ namespace OxyPlot.Avalonia
                 SetValue(CornerRadiusProperty, value);
             }
         }
+        
 
         /// <summary>
         /// Gets or sets the distance of the content container from the trackers Position.
