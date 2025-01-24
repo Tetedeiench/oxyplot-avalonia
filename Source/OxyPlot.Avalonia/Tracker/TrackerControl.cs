@@ -59,7 +59,7 @@ namespace OxyPlot.Avalonia
         /// <summary>
         /// Identifies the <see cref="CornerRadius"/> dependency property.
         /// </summary>
-        public static readonly StyledProperty<double> CornerRadiusProperty = AvaloniaProperty.Register<TrackerControl, double>(nameof(CornerRadius), 0.0);
+        public new static readonly StyledProperty<double> CornerRadiusProperty = AvaloniaProperty.Register<TrackerControl, double>(nameof(CornerRadius), 0.0);
 
         /// <summary>
         /// Identifies the <see cref="Distance"/> dependency property.
@@ -239,7 +239,7 @@ namespace OxyPlot.Avalonia
         /// <summary>
         /// Gets or sets the corner radius (only used when ShowPoint=<c>false</c>).
         /// </summary>
-        public double CornerRadius
+        public new double CornerRadius
         {
             get
             {

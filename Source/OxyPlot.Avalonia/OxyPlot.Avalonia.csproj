@@ -15,6 +15,12 @@
     <VersionPrefix>2.1.2</VersionPrefix>
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <NoWarn>1701;1702;AVP1002</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <NoWarn>1701;1702;AVP1002</NoWarn>
+  </PropertyGroup>
 
   <ItemGroup Condition="$(GeneratePackageOnBuild)">
     <None Include="$(MSBuildThisFileDirectory)../../Icons/OxyPlot_128.png" Pack="true" PackagePath="\" Visible="false" />
