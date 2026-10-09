@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:oxy="clr-namespace:OxyPlot.Avalonia;assembly=OxyPlot.Avalonia" 
              x:Class="AvaloniaExamples.Examples.UserControlDemo.UserControl1"
-             >
+             x:CompileBindings="False">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>

@@ -7,6 +7,7 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+using Avalonia.Input.Platform;
 using Avalonia.Reactive;
 
 namespace OxyPlot.Avalonia
@@ -82,16 +83,6 @@ namespace OxyPlot.Avalonia
         /// The zoom control.
         /// </summary>
         private ContentControl zoomControl;
-
-        /// <summary>
-        /// The is visible to user cache.
-        /// </summary>
-        private bool isVisibleToUserCache;
-
-        /// <summary>
-        /// The cached parent.
-        /// </summary>
-        private Control containerCache;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="PlotBase" /> class.
@@ -251,7 +242,7 @@ namespace OxyPlot.Avalonia
 
         /// <summary>
         /// When overridden in a derived class, is invoked whenever application code or internal processes (such as a rebuilding layout pass)
-        /// call <see cref="M:System.Windows.Controls.Control.ApplyTemplate" /> . In simplest terms, this means the method is called
+        /// call <see cref="M:Control.ApplyTemplate" /> . In simplest terms, this means the method is called
         /// just before a UI element displays in an application. For more information, see Remarks.
         /// </summary>
         /// <param name="e">Event data for applying the template.</param>

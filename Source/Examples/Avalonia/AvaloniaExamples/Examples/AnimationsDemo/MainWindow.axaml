@@ -4,7 +4,8 @@
         xmlns:AnimationsDemoViews="clr-namespace:AvaloniaExamples.Examples.AnimationsDemo.Views;assembly=AvaloniaExamples"
         xmlns:AnimationsDemoControls="clr-namespace:AvaloniaExamples.Examples.AnimationsDemo.Controls;assembly=AvaloniaExamples"
         x:Class="AvaloniaExamples.Examples.AnimationsDemo.MainWindow"
-        Title="AnimationsDemo" Height="480" Width="740">
+        Title="AnimationsDemo" Height="480" Width="740"
+        x:CompileBindings="False">
 
     <Grid>
         <Grid.RowDefinitions>

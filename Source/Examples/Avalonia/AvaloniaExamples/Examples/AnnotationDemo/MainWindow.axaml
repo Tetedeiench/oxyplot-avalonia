@@ -4,7 +4,8 @@
         xmlns:oxy="clr-namespace:OxyPlot.Avalonia;assembly=OxyPlot.Avalonia" 
         xmlns:OxyPlot="clr-namespace:OxyPlot;assembly=OxyPlot"
         x:Class="AvaloniaExamples.Examples.AnnotationDemo.MainWindow"
-        Title="AnnotationDemo" Height="480" Width="640">
+        Title="AnnotationDemo" Height="480" Width="640"
+        x:CompileBindings="False">
     <TabControl>
         <TabItem Header="ArrowAnnotation">
             <oxy:Plot Title="ArrowAnnotation">

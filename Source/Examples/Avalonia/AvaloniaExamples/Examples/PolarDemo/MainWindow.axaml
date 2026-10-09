@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:oxy="clr-namespace:OxyPlot.Avalonia;assembly=OxyPlot.Avalonia" 
          x:Class="AvaloniaExamples.Examples.PolarDemo.MainWindow"
-        Title="PolarDemo" Height="480" Width="640">
+        Title="PolarDemo" Height="480" Width="640" x:CompileBindings="False">
     <TabControl>
         <TabItem Header="Defined by PlotModel">
             <oxy:PlotView Model="{Binding MyModel}"/>

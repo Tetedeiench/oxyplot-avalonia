@@ -95,7 +95,7 @@ namespace OxyPlot.Avalonia
         public void Export(IPlotModel model, Stream stream)
         {
             var bmp = ExportToBitmap(model);
-            bmp.Save(stream);
+            bmp.Save(stream, PngBitmapEncoderOptions.Default);
         }
 
         /// <summary>

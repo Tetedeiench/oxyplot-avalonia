@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
         xmlns:oxy="clr-namespace:OxyPlot.Avalonia;assembly=OxyPlot.Avalonia"
         x:Class="AvaloniaExamples.Examples.LegendsDemo.MainWindow"
-        Title="LegendsDemo" Height="720" Width="1280">
+        Title="LegendsDemo" Height="720" Width="1280" x:CompileBindings="False">
     <DockPanel>
         <Grid>
             <oxy:PlotView Model="{Binding Model}" Background="White"/>

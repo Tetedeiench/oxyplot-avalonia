@@ -5,7 +5,7 @@
         x:Class="AvaloniaExamples.Examples.BoxPlotSeriesDemo.MainWindow"
         Title="BoxPlotSeriesDemo"
         Width="640"
-        Height="480">
+        Height="480" x:CompileBindings="False">
     <TabControl>
         <TabItem Header="Binding to PlotModel">
             <oxy:PlotView Model="{Binding Model1}" />

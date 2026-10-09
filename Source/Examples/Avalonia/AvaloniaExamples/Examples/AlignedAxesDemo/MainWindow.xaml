@@ -2,8 +2,10 @@
         xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:oxy="http://oxyplot.org/avalonia"
+        xmlns:alignedAxesDemo="clr-namespace:AvaloniaExamples.Examples.AlignedAxesDemo"
         x:Class="AvaloniaExamples.Examples.AlignedAxesDemo.MainWindow"
-        Title="AlignedAxesDemo" Height="480" Width="640">
+        Title="AlignedAxesDemo" Height="480" Width="640"
+        x:CompileBindings="False">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
