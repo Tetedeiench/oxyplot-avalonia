@@ -15,11 +15,12 @@
     <VersionPrefix>2.1.2</VersionPrefix>
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
-    <NoWarn>1701;1702;AVP1002</NoWarn>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
-    <NoWarn>1701;1702;AVP1002</NoWarn>
+  <PropertyGroup>
+    <!-- AVP1002: ScatterSeries<T> registers its properties on a generic owner (upstream design). -->
+    <NoWarn>$(NoWarn);1701;1702;AVP1002</NoWarn>
+    <!-- Consumers build with custom configuration names (e.g. OCCT's "11-Release"), which turn into invalid
+         implicit defines (MSB3052). The sources use no configuration symbols. -->
+    <DisableImplicitConfigurationDefines>true</DisableImplicitConfigurationDefines>
   </PropertyGroup>
 
   <ItemGroup Condition="$(GeneratePackageOnBuild)">
